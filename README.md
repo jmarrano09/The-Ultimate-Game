@@ -35,3 +35,10 @@ exit
 ```
 node server.js
 ```
+
+## Contributers
+- Dawn Wages
+- Jess Marrano
+- Darius Williams
+- Sam Stover
+- Greg Mckenzie
