@@ -48,6 +48,7 @@ $(document).ready(function(){
 
 		function firstModal() {
 			$(".modal-title").text("Crystal Collector");
+			// $(".modal-text").append("<img src='/images/wizard2.gif' alt='magi' height='100' width='auto'></img>"); // only appends after text
 			$(".modal-text").text("You're on your way to save your friend. The villain is evil and could be doing anything to your bud. A true sadist. You must go on a journey to find them in the Kingdom on Naanjibar. You'll have to cross a formidable bridge with an even more formidable genius troll underneath. No one has ever beat his truly tricky questions in order to pass. But you can! The only hope is going to the local sorcerer and creating the best crystal combination to give you special intelligent powers. It will help you pass the test, cross the bridge and save your friend.");
 			$(".modal-text").append("<img src='/images/gem3_red.png'></img>");
 			userImage = $("<img>").attr("src", user.sprite);
@@ -214,9 +215,9 @@ $(document).ready(function(){
 			return;
 		}
 		else if ( userNumber == randoNumber){
-			
+			// IF YOU WIN CRYSTAL COLLECTOR
 			$(".modal-title").text("Crystal Collector");
-			$(".modal-text").text("congratulations! We're ready to meet the troll!");
+			$(".modal-text").text("Congratulations! We're ready to meet the troll!");
 			$("#game-modal").modal();
 			//totalWins = totalWins +1;
 			//totalRounds = totalRounds +1;
@@ -234,7 +235,7 @@ $(document).ready(function(){
 				redirectLink();
 		}
 		else{
-			
+			// IF YOU LOSE CRYSTAL COLLECTOR
 			$(".modal-title").text("Crystal Collector");
 			$(".modal-text").text("Oh no, you've gone over. You'll need to get the correct combination in order to beat the troll.");
 			$(".modal-text").append("<img src='/images/gem3_red.png'></img>");

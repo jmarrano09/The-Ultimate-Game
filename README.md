@@ -7,7 +7,7 @@ To use this application:
 1. Ensure that Node.js, npm, and MySQL are installed on your machine. For instructions, see the Technologies Used section below.
 - Next, clone this repo to your local machine:
 ```
-git clone git@github.com:stoversa/TheUltimateGame.git
+git clone https://github.com/jmarrano09/The-Ultimate-Game.git
 ```
 2. Open the repo and execute in the bash terminal. Doing so should install the cTable, inquirer, and MySQL npm packages:
 ```

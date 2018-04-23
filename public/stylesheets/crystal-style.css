@@ -1,5 +1,7 @@
 /* ============================  CRYSTAL GAME  ========================== */
- .playgames{
+
+
+.playgames{
 	margin: 0px;
 	padding: 130px 45px;
 	height: 600px;
@@ -80,8 +82,8 @@
 	height: 150px;
 	width: 150px;
 	position: absolute;
-	top: 188px;
-	left: 400px;
+    margin-top: -237px;
+    margin-left: -146px;
 }
 
 .crystalTwo{
@@ -89,30 +91,26 @@
 	height: 150px;
 	width: 150px;
 	position: absolute;
-	top: 350px;
-	left: 400px;
+    margin-top: -74px;
+    margin-left: 26px;
 }
 
 .crystalThree{
 	border-radius: 25px;
-	margin-left: 45px;
-	margin-right: 45px;
 	height: 150px;
 	width: 150px;
 	position: absolute;
-    top: 350px;
-	left: 520px;
+    margin-top: -74px;
+    margin-left: -146px;
 }
 
 .crystalFour{
 	border-radius: 25px;
-	margin-left: 45px;
-	margin-right: 45px;
 	height: 150px;
 	width: 150px;
 	position: absolute;
-    top: 188px;
-	left: 520px;
+    margin-top: -237px;
+    margin-left: 26px;
 	text-align: center;
 }
 

@@ -42,70 +42,75 @@
     </nav>
     <div class="container">
 
-        <!-- BOSS -->
-        <div class="bossBG">
-            <div class="row">
-                <h1 class="text-center" style="color:white">Classic Boss Battle!</h1>
-                <div class="col-md-6 col-md-offset-6">
-                    <h2>Evil Boss Wizard</h2>
-                    <div>
-                        <img src="" class="img-responsive" id="boss-img">
+            <!-- BOSS -->
+            <div class="bossBG">
+                <div class="row">
+                    <h1 class="text-center" style="color:white"></h1>
+                    <div class="col-md-6 col-md-offset-6">
+                        <!-- VILLIAN -->
+                        <div id="villian">
+                            <h2>Evil Boss Wizard</h2>
+                            <img src="" class="img-responsive" id="boss-img">
+                            <div>HP:
+                                <span id="boss-hp"></span>
+                            </div>
+                        </div>
+    
                     </div>
-                    <div>HP:
-                        <span id="boss-hp"></span>
+                </div>
+                <!-- CHARACTER -->
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <!-- HERO -->
+                        <div id="hero">
+                            <h2 id="char-name">Our Hero</h2>
+                            <img src="" class="img-responsive" id="user-img">
+                            <div>HP:
+                                <span id="user-hp"></span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <!-- ACTIONS -->
+                <div class="row">
+                    <div class="buttons col-md-6 col-md-offset-1">
+                        <!-- attack button -->
+                        <button class="btn btn-default" id="attack">
+                            <span class="glyphicon glyphicon-flash"></span> Attack</button>
+                        <!-- potion button -->
+                        <button class="btn btn-default" id="potion">
+                            <span class="glyphicon glyphicon-baby-formula"></span> Potion
+                            <span class="badge" id="user-potions"></span>
+                        </button>
+                        <!-- special button -->
+                        <button class="btn btn-default" id="special">
+                            <span class="glyphicon glyphicon-star-empty"></span> Special ability</button>
                     </div>
                 </div>
             </div>
-            <!-- CHARACTER -->
-            <div class="row">
-                <div class="col-md-6 col-md-offset-1">
-                    <h2 id="char-name">Our Hero</h2>
-                    <div>
-                        <img src="" class="img-responsive" id="user-img">
+    
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="game-modal" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 id="modal-title"></h4>
                     </div>
-                    <div>HP:
-                        <span id="user-hp"></span>
-                        <br/>
-                        <br/>
+                    <div class="modal-body">
+                        <div id="modal-text"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
                     </div>
                 </div>
-            </div>
-            <!-- ACTIONS -->
-            <div class="row">
-                <div class="buttons col-md-6 col-md-offset-1">
-                    <button class="btn btn-default" id="attack">
-                        <span class="glyphicon glyphicon-flash"></span> Attack</button>
-                    <button class="btn btn-default" id="potion">
-                        <span class="glyphicon glyphicon-baby-formula"></span> Potion
-                        <span class="badge" id="user-potions"></span>
-                    </button>
-                    <button class="btn btn-default" id="special">
-                        <span class="glyphicon glyphicon-star-empty"></span> Special ability</button>
-                </div>
+    
             </div>
         </div>
-
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="game-modal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 id="modal-title"></h4>
-                </div>
-                <div class="modal-body">
-                    <div id="modal-text"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../js/games/bossfight.js"></script>

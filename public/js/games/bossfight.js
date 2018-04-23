@@ -99,10 +99,12 @@ $(document).ready(function () {
   };
   //render sprite images on page
   function renderImage() {
-    bossImg.attr("src", boss.sprite).attr("style", "height:100px; width:100px;");
-    userImg.attr("src", user.sprite).attr("style", "height:100px; width:100px;");
+    //css attributes in javascript for these images
+    bossImg.attr("src", boss.sprite).attr("style", "height:100px; width:100px; margin: 0 auto;");
+    userImg.attr("src", user.sprite).attr("style", "height:100px; width:100px; margin: 0 auto;");
     userName.text(user.char_name);
   };
+
 
   function winGame() {
     alert("You win!")

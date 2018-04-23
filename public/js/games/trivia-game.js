@@ -33,6 +33,9 @@ $(document).ready(function() {
   start: function() {
     $("#time").html("Time Remaining: " + questionTimer.time);
     counter = setInterval(questionTimer.count, 1000);
+    document.getElementById("time").style.background = "white"; //makes the background of these IDs white upon clicking the start button
+    document.getElementById("questions").style.background = "white";
+    document.getElementById("result").style.background = "white";
   },
   stop: function() {
         clearInterval(counter);
